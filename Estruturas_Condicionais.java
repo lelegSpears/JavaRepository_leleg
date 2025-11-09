@@ -13,7 +13,7 @@ public class Estruturas_Condicionais {
 		System.out.print(" Digite sua nota da redação: ");
 		Double NotaRedacao = sc.nextDouble(); // Pega a nota da Redação
 		sc.nextLine();
-
+// if com &&
 		if (NotaProva > 670.7 && NotaRedacao > 0) {  	 // Se a notaP for maior que 670.7 e a notaR for maior que 0
 			System.out.printf(" Voce foi aceito\n"); 	 // Aprovado
 		} else { // Se não
@@ -25,6 +25,7 @@ public class Estruturas_Condicionais {
 		System.out.print(" Digite sua forma de pagamento: ");
 		String FormaPagamento = sc.next(); // Escolha a forma de pagamento(debito ou credito)
 		sc.nextLine();
+// if com ||
 		if (FormaPagamento.equalsIgnoreCase("debito") || FormaPagamento.equalsIgnoreCase("credito")) { // Se for debito OU credito
 			System.out.printf(" Pagamento recebido.\n"); // Recebido
 		} else { 									  	 // Se não
@@ -36,7 +37,7 @@ public class Estruturas_Condicionais {
 		System.out.printf(" Escolha um dia de 1 a 7 (Começando em domingo): ");
 		int escolha = sc.nextInt();
 		sc.close();	// Fechando o Scanner
-		
+// Switch		
 		switch (escolha) {		// Switch para escolher invés de varios "else if"
 			case 1:
 				dia = "domingo";
@@ -66,3 +67,4 @@ public class Estruturas_Condicionais {
 		System.out.printf(" Você escolheu %s.\n", dia);
 	}
 }
+
