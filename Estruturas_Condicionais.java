@@ -65,6 +65,9 @@ public class Estruturas_Condicionais {
 				break;
 			}
 		System.out.printf(" Você escolheu %s.\n", dia);
+	// Condicional ternária
+		( 2 > 4 ) ? "Verdadeiro" : "Falso"	// se verdadeiro = "Verdadeiro" : se falso = "Falso"
 	}
 }
+
 
