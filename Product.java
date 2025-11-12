@@ -46,4 +46,14 @@ public class Product { // Produto
 	public int getQuantity() {	// Quantidade não pode ser modificado com set, por questão de Regras de negócio.
 		return quantity;
 	}
-}
+	public void addQuantity(int amount) {
+    if (amount > 0) {
+        quantity += amount;
+    }}
+
+	public void removeQuantity(int amount) {
+    if (amount > 0 && amount <= quantity) {
+        quantity -= amount;
+    }}
+	}
+
