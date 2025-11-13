@@ -15,30 +15,29 @@ public class Vetores {
 			System.out.printf(" Digite a %d° palavra: ", i+1);
 			vetorPalavras[i] = sc.next(); // Quais palavras
 		}
-		System.out.printf("Você escolheu guardar %d Palavras, as palavras foram %s.\n\n", n,
-				String.join(", ", vetorPalavras));
+		System.out.printf("Você escolheu guardar %d Palavras, as palavras foram %s.\n\n", n, String.join(", ", vetorPalavras));
 		
 		System.out.print(" Quantos produtos você quer criar: ");
-		int x = sc.nextInt();
+		int x = sc.nextInt(); // Numero de produtos
 		sc.nextLine();
 		Product[] vetorProdutos = new Product[x];
 
-		for (int i = 0; i < x; i++) {
+		for (int i = 0; i < x; i++) {	// Criar produtos até x
 			System.out.printf(" -%d° Produto-\n", i+1);
 			System.out.print(" Nome do produto: ");
-			String name = sc.nextLine();
+			String name = sc.nextLine();	// adicionar nome
 			
 			System.out.print(" Valor do produto: ");
-			Double value = sc.nextDouble();
+			Double value = sc.nextDouble();	// adicionar valor
 			sc.nextLine();
 			
 			System.out.print(" Quantidade do produto: ");
-			int quantity = sc.nextInt();
+			int quantity = sc.nextInt();	// adicionar quantidade
 			sc.nextLine();
 			
-			vetorProdutos[i] = new Product(name, value, quantity);
+			vetorProdutos[i] = new Product(name, value, quantity);	// Criar produto
 
-			System.out.printf("Você criou o %d° produto com as informações %s.\n", i + 1, vetorProdutos[i]);
+			System.out.printf("Você criou o %d° produto com as informações %s.\n", i + 1, vetorProdutos[i]);	// Mostrar na repetição o resultado
 		}
 		sc.close();
 	}
@@ -96,3 +95,4 @@ public class Product { // Produto
 	}
 }
 */
+
